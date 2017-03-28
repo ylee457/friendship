@@ -1,0 +1,13 @@
+<% content_for :main_content do %>
+  <div class="">
+    <div class="container-fluid"> 
+        <div class="well"> 
+          <p class="text-center2" >Hi, welcome to my friendship demo application</p>
+          <p class="text-center2">Ready to make some friends? Create an account to get started.</p>
+          <p class="text-center2">
+            <%= link_to 'Create Account', new_user_registration_path, class: 'btn btn-primary btn-small' %>
+          </p>
+        </div>
+    </div>
+  </div>
+<% end %>

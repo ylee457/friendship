@@ -1,1 +1,2 @@
 rails g controller Homes index
+rails g migration AddNameToUsers name:string 

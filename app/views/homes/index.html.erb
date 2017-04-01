@@ -1,13 +1,17 @@
-<% content_for :main_content do %>
-  <div class="">
-    <div class="container-fluid"> 
-        <div class="well"> 
-          <p class="text-center2" >Hi, welcome to my friendship demo application</p>
-          <p class="text-center2">Ready to make some friends? Create an account to get started.</p>
-          <p class="text-center2">
-            <%= link_to 'Create Account', new_user_registration_path, class: 'btn btn-primary btn-small' %>
-          </p>
-        </div>
-    </div>
+
+  <div class="well"> 
+    <h1 class="text-center" >Hello! Welcome to my friendship demo application</h1></br>
+    <h4 class="text-center" >This is a home page for the application.</h4></br></br></br>
+
+    <% if user_signed_in? %>
+
+      <%= link_to 'Back', users_path %>
+
+    <% else %>
+
+      <h4 class="text-center1">Ready to make some friends? Please log in or create an account to get started.</h4>
+       <%= link_to 'Create Account', new_user_registration_path, class: 'btn btn-primary btn-small' %>
+       <%= link_to 'Log In', new_user_session_path, class: 'btn btn-success btn-small' %>
+
+    <% end %>
   </div>
-<% end %>

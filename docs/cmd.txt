@@ -1,2 +1,5 @@
 rails g controller Homes index
 rails g migration AddNameToUsers name:string 
+
+# generate controller with default REST actions
+rails g scaffold_controller Users

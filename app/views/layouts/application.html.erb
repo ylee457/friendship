@@ -11,19 +11,8 @@
   <body>
 
     <%= render 'layouts/navbar' %>
-
-    <div class="container-fluid">
-      <% flash.each do |key, mesg| %>
-        <div class="alert alert-<%= key %>">
-          <%= mesg %>
-        </div>
-      <% end %>
-    </div>
-    
-    <%= yield :main_content %>
     
     <div class="container-fluid">
-      <h1><%= yield :header %></h1>
     
       <%= yield %>
     </div>

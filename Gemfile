@@ -46,6 +46,7 @@ gem 'devise', '~> 4.2.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'minitest-reporters', '~> 1.1', '>= 1.1.11'
 end
 
 group :development do

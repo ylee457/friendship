@@ -1,5 +1,5 @@
-/*flash*/
-.alert-error {
+/* flash and devise error message */
+.alert-error, #error_explanation {
     background-color: #f2dede;
     border-color: #eed3d7;
     color: #b94a48;
@@ -26,3 +26,4 @@
     color: #468847;
     text-align: left;
  }
+
